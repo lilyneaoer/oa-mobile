@@ -1,0 +1,5 @@
+/*weui激活颜色重置*/
+ .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label{
+  color:#5876A6;
+  fill:#5876A6;
+}

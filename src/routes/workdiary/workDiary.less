@@ -1,0 +1,74 @@
+@import './../basic.less';
+.pageTop{
+  background: @wxBlue;
+  .iconBox:nth-child(1){
+    margin-left:220/@vw;
+  }
+  .iconBox:nth-child(2){
+    margin-left:455/@vw;
+  }
+  .iconBox{
+    width:170/@vw;
+    float:left;
+    .iconWrap{
+      width:150/@vw;
+      height:150/@vh;
+      background: #FFF;
+      border:1px solid @wxBlue;
+      border-radius: 50%;
+      text-align: center;
+      margin:0 auto;
+      .icon_bianji{
+        width:65/@vw;
+        height:65/@vh;
+        fill:#EA775C;
+        margin-top:38/@vh;
+      }
+      .icon_wenzhang{
+        width:50/@vw;
+        height:60/@vh;
+        fill:#6DA6ED;
+        margin-top:38/@vh;
+      }
+    }
+    h5{
+      color:#FFF;
+      font-size: 33/@vw;
+      font-weight: normal;
+      text-align: center;
+      margin-top:20/@vh;
+      margin-bottom:30/@vh;
+    }
+  }
+}
+.pageTop:after{
+  .clr;
+}
+.button{
+  width:60vw;
+  margin:3vh auto;
+}
+.diaryLeftTitle{
+  width:25vw;
+}
+.textAreaTitle{
+  //color:#000;
+  //padding-top:15/@vh;
+  //padding-bottom:15/@vh;
+  //background: #F7F7F7;
+}
+//.weui-cell_access .weui-cell__ft:after
+.noteList{
+  .weui-cell_access{
+    .weui-cell__ft{
+      .icon{
+        width:40/@vw;
+        height:50/@vh;
+        fill:#999999;
+      }
+    }
+    .weui-cell__ft:after{
+      //border:none;
+    }
+  }
+}

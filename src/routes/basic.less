@@ -1,0 +1,73 @@
+@wxBlue:#5876A6;
+@wxBg:#F7F7F7;
+@wxBd:#ACABAC;
+//px转换为vh,vw
+//.tw(width,800);
+//height:1000/@dh;
+@deviceWidth:1242;
+@deviceHeight:2208;
+@vw:@deviceWidth/100*1vw;
+@vh:@deviceHeight/100*1vh;
+.tw(@props,@value){
+  @result:@value/((@deviceWidth/100)*1px)*1vw;
+  @{props}: @result;
+}
+.th(@props,@value){
+  @result:@value/((@deviceHeight/100)*1px)*1vh;
+    @{props}: @result;
+}
+.clr{
+  clear:both;content:'';display:block;width:0;height:0;visibility:hidden;
+}
+//引入图标
+.icon {
+  //width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  //fill: currentColor;
+  overflow: hidden;
+}
+.redBd{
+  border:1px solid red;
+}
+.divAll{
+  background: #F7F7F7;
+  //padding-top:180/@vh;
+}
+.pageTitle{
+  width:100vw;
+  color:#FFF;
+  background: @wxBlue;
+  //position: fixed;
+  //z-index: 99;
+  //top: 0;
+  h2{
+    text-align: center;
+    font-weight: bold;
+  }
+}
+.Wrap{
+  width:100vw;
+  height:100vh;
+  background:@wxBg;
+  border-top:1px solid @wxBd;
+  .icon{
+    width:65/@vw;
+    height:65/@vh;
+    margin-top:10/@vh;
+    margin-bottom:10/@vh;
+    fill:#888B90;
+  }
+  .btmTitle{
+    //color:red;
+  }
+}
+//todo
+//weui激活颜色重置
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__label,.weui-tabbar__item.weui-bar__item_on .icon{
+  color:#5876A6;
+  fill:#5876A6;
+}
+//电话本
+.phoneTitle{
+  background: #F7F7F7;
+}
